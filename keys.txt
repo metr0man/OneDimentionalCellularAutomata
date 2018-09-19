@@ -1,0 +1,14 @@
+the program will start with seed "" (empty) and on rule 0
+to change the seed, press s and then enter a sequence of a,b,c, and d, press enter once finished (only matters for random first row)
+to change the rule press r
+use the left and right arrow keys to change the rule sequentially
+use the up and down arrow keys to view different slides (only matters for random first row)
+
+
+the in code parameters are firstRow,blocksize,width,height, and topSize
+blockSize and topSize are in pixels
+width and height are numbers of blocks
+for firstRow: r is random, f is full, e is empty, o is one block, c is for custom, enteredin customRow
+
+**Note**
+the program is not well optimized for large numbers of blocks and will slow down considerably
