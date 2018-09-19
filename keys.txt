@@ -3,7 +3,7 @@ to change the seed, press s and then enter a sequence of a,b,c, and d, press ent
 to change the rule press r
 use the left and right arrow keys to change the rule sequentially
 use the up and down arrow keys to view different slides (only matters for random first row)
-
+press k to take a screenshot
 
 the in code parameters are firstRow,blocksize,width,height, and topSize
 blockSize and topSize are in pixels

@@ -10,10 +10,10 @@ from functions import genRow
 
 #paramaters
 blockSize = 10
-width = 50 #number of blocks across of the window
-height = 80 #includes first random row
+width = 192 #number of blocks across of the window
+height = 108 #includes first random row
 topSize = 30 #height of top box in pixels; default is 30
-firstRow = "r" #r is random, f is full, e is empty, o is one block, c is custom
+firstRow = "o" #r is random, f is full, e is empty, o is one block, c is custom
 customRow = "00101010101" #enter 0's and 1's; the program will append 0s
 
 pygame.init()
@@ -43,6 +43,11 @@ while running:
         if mode == "n":
             if event.type == pygame.KEYDOWN and event.key == pygame.K_r:
                 mode = "r" #setting rule
+
+        if event.type == pygame.KEYDOWN and event.key == pygame.K_k:
+            rect = pygame.Rect(0,topSize,width*blockSize,height*blockSize)
+            sub = screen.subsurface(rect)
+            pygame.image.save(sub,'screenshot'+str(rule)+'.png')
 
         #arrows
         if event.type == pygame.KEYDOWN and event.key == pygame.K_UP:
