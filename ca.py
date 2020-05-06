@@ -47,7 +47,7 @@ while running:
         if event.type == pygame.KEYDOWN and event.key == pygame.K_k:
             rect = pygame.Rect(0,topSize,width*blockSize,height*blockSize)
             sub = screen.subsurface(rect)
-            pygame.image.save(sub,'screenshot'+str(rule)+'.png')
+            pygame.image.save(sub,'screenshots/screenshot'+str(rule)+'.png')
 
         #arrows
         if event.type == pygame.KEYDOWN and event.key == pygame.K_UP:

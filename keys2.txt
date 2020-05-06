@@ -1,0 +1,6 @@
+rightarrow, leftarrow - next, previous rule
+downarrow, uparrow - next, previous slide
+
+r - random rule
+
+k - screenshot
